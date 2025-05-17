@@ -24,11 +24,11 @@ public class RainDrop : MonoBehaviour
         // تشخیص برخورد با بازیکن یا زمین و اعمال امتیاز
         if (other.CompareTag("Player"))
         {
-            HandleCollision("Player", 1);
+            HandleCollision("Player", 10);
         }
         else if (other.CompareTag("Ground"))
         {
-            HandleCollision("Ground", -1);
+            HandleCollision("Ground", -10);
         }
     }
 

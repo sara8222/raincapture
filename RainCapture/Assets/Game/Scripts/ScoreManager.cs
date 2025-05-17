@@ -8,7 +8,7 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] private GameObject gameOverText;
     [SerializeField] private GameObject tryAgainButton;
     [SerializeField] private RainSpawner rainSpawner;
-    [SerializeField] private int gameOverScore = -10;
+    [SerializeField] private int gameOverScore = 0;
 
     private int score;
     private bool isGameOver;
@@ -17,7 +17,7 @@ public class ScoreManager : MonoBehaviour
     {
         Debug.Log("ScoreManager initialized");
 
-        score = 0;
+        score = 50;
         isGameOver = false;
 
         UpdateScoreText();
@@ -44,7 +44,7 @@ public class ScoreManager : MonoBehaviour
     private void UpdateScoreText()
     {
         if (scoreText)
-            scoreText.text = $"Score: {score}";
+            scoreText.text = $"Health: {score}";
     }
 
     private void HandleGameOver()

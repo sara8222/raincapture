@@ -546,7 +546,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score: 0'
+  m_text: 'health: 50'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -672,12 +672,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6086843a55203b04d81f47bb8f533b6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: -10
   scoreText: {fileID: 879470775}
   gameOverText: {fileID: 0}
   tryAgainButton: {fileID: 0}
   rainSpawner: {fileID: 1165077347}
-  gameOverScore: -20
+  gameOverScore: 0
 --- !u!4 &886868619
 Transform:
   m_ObjectHideFlags: 0
